@@ -1,0 +1,60 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: '微软雅黑';
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear_fl:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.auto {
+    margin:0 auto;
+}
+.table{
+    display: table;
+}
+.table_td{
+    display: table-cell;
+}
+/*禁止被选中*/
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+@font-face {
+    font-family: 'iconfont';  /* project id 480732 */
+    src: url('http://at.alicdn.com/t/font_480732_c3ywd81jg11nhfr.eot');
+    src: url('http://at.alicdn.com/t/font_480732_c3ywd81jg11nhfr.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_480732_c3ywd81jg11nhfr.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_480732_c3ywd81jg11nhfr.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_480732_c3ywd81jg11nhfr.svg#iconfont') format('svg');
+}
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:20px;
+    color: white;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: pointer;
+}

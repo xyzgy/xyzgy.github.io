@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>小言子</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<!-- <link rel="stylesheet" href="../css/reset-min.css"/> -->
+<script type="text/javascript">
+    // borwserRedirect
+    (function browserRedirect(){
+      var sUserAgent = navigator.userAgent.toLowerCase();
+      var bIsIpad = sUserAgent.match(/ipad/i) == 'ipad';
+      var bIsIphone = sUserAgent.match(/iphone os/i) == 'iphone os';
+      var bIsMidp = sUserAgent.match(/midp/i) == 'midp';
+      var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == 'rv:1.2.3.4';
+      var bIsUc = sUserAgent.match(/ucweb/i) == 'web';
+      var bIsCE = sUserAgent.match(/windows ce/i) == 'windows ce';
+      var bIsWM = sUserAgent.match(/windows mobile/i) == 'windows mobile';
+      var bIsAndroid = sUserAgent.match(/android/i) == 'android';
+      if(bIsIpad || bIsIphone || bIsMidp || bIsUc7 || bIsUc || bIsCE || bIsWM || bIsAndroid ){
+        
+      }else{
+        window.location.href = '../index.html';
+      }
+    })();
+</script>
+<script>
+window.onload = function(){
+  getRem(720,100)
+};
+window.onresize = function(){
+  getRem(720,100)
+};
+
+// 设计稿宽度，缩放比例
+function getRem(pwidth,prem){
+  var html = document.getElementsByTagName("html")[0];
+    //之所以要得到文档的根元素，是为了计算网页所打开时屏幕的真实宽度
+  //clientWidth 是我们页面打开时所得到的屏幕（可看见页面的真实宽度）宽度真实的宽度值
+  var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+
+  //设置根元素font-size
+  // html.style.fontSize = oWidth/pwidth*prem + "px";   //两者相除得到一个放大或缩小的比例值
+}
+
+//小米官网的写法
+// 叹号后面跟函数!function
+// 和加号后面跟函数+function
+// 都是跟(function(){})();这个函数是一个意思，都是告诉浏览器自动运行这个匿名函数的，因为!+()这些符号的运算符是最高的，所以会先运行它们后面的函数
+!function(n){
+  var e=n.document,
+  html=e.documentElement,
+  i=750, //设计稿宽度
+  d=i/100, //100换算rem
+  o="orientationchange"in n?"orientationchange":"resize",  //用户水平翻转事件,感应手机方向
+  a=function(){
+    // && 是逻辑与运算符，两边同时为真才为true
+    var width=html.clientWidth||320;
+    width>720&&(width=720);
+    html.style.fontSize=width/d+"px";
+  };
+    console.log(e.addEventListener&&(n.addEventListener(o,a,!1),e.addEventListener("DOMContentLoaded",a,!1)))
+  // addEventListener(event, function, useCapture) 添加事件 ,第三参数可选，指定事件是否在捕获或冒泡阶段执行true 或者 false
+  ////当dom加载完成时，或者 屏幕垂直、水平方向有改变进行html的根元素计算
+  e.addEventListener&&(n.addEventListener(o,a,!1),e.addEventListener("DOMContentLoaded",a,!1))
+}(window);
+
+
+</script>
+<style>
+  .wrap{position:absolute;top:0;left:0;bottom:0;right:0;background:#fefefe;}
+  .title{width:100%;height:0.98rem;line-height:0.98rem;color:#fff;background:#e02222;text-align: center;font-size:0.32rem;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="title">首页</div>
+    <div>
+      "★★★★★☆☆☆☆☆".slice(5 - rate, 10 - rate);定义一个变量rate是1到5的值,一星到5星好评
+    </div>
+    <div>
+      sb<br>
+      (!(~+[])+{})[--[~+""][+[]]*[~+[]] + ~~!+[]]+({}+[])[[~!+[]]*~+[]]
+    </div>
+    <div>
+      nb<br>
+      ([][[]]+[])[+!![]]+([]+{})[!+[]+!![]]
+    </div>
+  </div>
+</body>
+</html>

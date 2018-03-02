@@ -3,8 +3,112 @@
 <head>
 	<meta charset="UTF-8">
 	<title>小言子</title>
+	<link rel="stylesheet" href="css/common.css">
+	<script type="text/javascript">
+	    // borwserRedirect
+	    (function browserRedirect(){
+	      var sUserAgent = navigator.userAgent.toLowerCase();
+	      var bIsIpad = sUserAgent.match(/ipad/i) == 'ipad';
+	      var bIsIphone = sUserAgent.match(/iphone os/i) == 'iphone os';
+	      var bIsMidp = sUserAgent.match(/midp/i) == 'midp';
+	      var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == 'rv:1.2.3.4';
+	      var bIsUc = sUserAgent.match(/ucweb/i) == 'web';
+	      var bIsCE = sUserAgent.match(/windows ce/i) == 'windows ce';
+	      var bIsWM = sUserAgent.match(/windows mobile/i) == 'windows mobile';
+	      var bIsAndroid = sUserAgent.match(/android/i) == 'android';
+	      if(bIsIpad || bIsIphone || bIsMidp || bIsUc7 || bIsUc || bIsCE || bIsWM || bIsAndroid ){
+	        window.location.href = 'html/mobile.html';
+	      }
+	    })();
+	</script>
+	<style>
+	    body{
+	      /*background: url(img/bg.png) no-repeat;*/
+	      background: skyblue;
+	      background-size: cover;
+	    }
+	    /*html{transform: scale(0.8);}*/
+	    #wrap{
+	      width: 1200px;
+	      margin:0 auto;
+	      /*height: 1080px;*/
+	      border:1px solid #fff;
+	    }
+	    header{
+	      text-align: center;
+	    }
+	    nav{
+	      background: #5BBDF3;
+	      color: white;
+	    }
+	    .nav_ul li{
+	      float: left;
+	      width: 200px;
+	      height: 40px;
+	      line-height: 40px;
+	      text-align: center;
+	      /*list-style-type: none;*/
+	      list-style-position: inside;
+	    }
+	    aside{
+	      width:280px;
+	      text-align: center;
+	      margin-right: 20px;
+
+	    }
+	    article{
+	      width: 900px;
+
+	    }
+
+	</style>
 </head>
+
 <body>
-	<div>xyzgywelcom to you</div>
+<!-- h5新增标签只是提供一个标签，不带有任何属性，个人理解 -->
+    <div id="wrap">
+      <header>header头部
+      <div class="now_time" >2018-02-28 10:30</div>
+      </header>
+    	<nav>
+        <ul class="clear_fl nav_ul">
+           <li>1</li>
+           <li>2</li>
+           <li>3</li>
+           <li>4</li>
+         </ul> 
+      </nav>
+      <div class="clear_fl">
+        <aside class="left">定义页面的侧边栏</aside>
+        <article class="left">定义独立的内容区域</article>
+      </div>
+        
+      <footer>footer页脚</footer>
+    </div>
+<div style="border:1px solid #fff;display: flex;" >
+	<div style="width:200px;border:1px solid red">1</div>
+	<div style="border:1px solid red;width: 100%;">2</div>
+	<div style="width:200px;border:1px solid red">3</div>
+</div>
 </body>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript"> 
+  function get_now_time(){
+    let now=new Date();
+    let year=now.getFullYear();
+    let month=now.getMonth();
+    let day=now.getDate();
+    let hours=now.getHours();
+    let minutes=now.getMinutes();
+    let seconds=now.getSeconds();
+    if(month<10){month = '0'+(month+1);}else{month = month+1;}
+    if(day<10){day = '0'+day;}
+    if(hours<10){hours = '0'+hours;}
+    if(minutes<10){minutes = '0'+minutes;}
+    if(seconds<10){seconds = '0'+seconds;}
+    $('.now_time').html(""+year+"-"+month+"-"+day +" "+ hours+":"+minutes+":"+seconds+"");
+    setTimeout(get_now_time,1000)
+  }
+  get_now_time();
+</script>
 </html>
