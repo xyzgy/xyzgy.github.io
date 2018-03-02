@@ -1,0 +1,47 @@
+.siblings_page p{
+	font-size: 22px;
+	color: #656565;
+	line-height: 50px;
+	margin-top: 20px;
+}
+
+.hyzx_page p{
+	font-size: 20px;
+	color: #656565;
+	line-height: 48px;
+	margin: 10px 0;
+	text-indent:40px;
+
+}
+.hyzx,.gsdt{
+	cursor: pointer;
+}
+.hyzx_title{
+	font-size: 36px;
+	color: #656565;
+	/*text-align: center;*/
+}
+.hyzx_time{
+	font-size: 18px;
+	color: #656565;
+	padding: 25px 0;
+	/*text-align: center;*/
+
+}
+.hyzx:hover p,.gsdt:hover p{
+	color: #a81b12;
+	/*font-weight: bold;*/
+}
+.gsdt_page p{
+	font-size: 18px;
+	color: #656565;
+	line-height: 50px;
+	margin-top: 20px;
+	text-indent:40px;
+}
+
+.hyzx_page,.gsdt_page{
+	max-height: 800px;
+	overflow-y: scroll;
+	margin-bottom: 40px;
+}

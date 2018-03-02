@@ -1,0 +1,35 @@
+.siblings_page ul li:nth-child(odd){
+	font-weight: bold;
+	line-height: 40px;
+	cursor: pointer;
+	/*border-bottom: 1px solid red*/
+}
+.siblings_page ul li:nth-child(even){
+	/*border:1px solid red;*/
+	/*height: 80px;*/
+	padding-left: 60px;
+	max-height: 600px;
+	overflow-y:scroll;
+}
+
+/*.siblings_page ul li.job_txt::-webkit-scrollbar{
+	display: none;
+}
+*/
+.job_name{
+	font-weight: bold;
+	font-size: 24px;
+	color: #2e97bf;
+	padding:10px 0;
+
+}
+.job_title{
+	font-weight: bold;
+	font-size: 20px;
+	color: #656565;
+	padding:10px 0;
+}
+.job_title_show p{
+	color: #656565;
+	line-height: 40px;
+}

@@ -1,0 +1,33 @@
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+*{
+	margin: 0
+}
+.relative{
+	position: relative;
+}
+.absolute{
+	position: absolute;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear_fl:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.none{
+	display: none;
+}
