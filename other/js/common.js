@@ -92,7 +92,7 @@ $('.page_ul li').click(function() {
 	let text = $(this).text();
 	listPage(this, index, text);
 
-	console.log($('.main_top').height())
+	// console.log($('.main_top').height())
 
 	$('body,html').animate({
 		scrollTop: $('.main_top').height()
@@ -115,10 +115,10 @@ $('.page_li').click(function() {
 })
 
 function listPage(_this, index, text) {
-	console.log(index)
+	// console.log(index)
 
 	if ($('.other_bg')) {
-		console.log($('.other_bg img').length)
+		// console.log($('.other_bg img').length)
 		if ($('.other_bg img').length < 2) {
 			$('.other_bg img').eq(0).show();
 		} else {
@@ -140,4 +140,10 @@ function listPage(_this, index, text) {
 
 // 插入的代码中间标签不需要结束标签 暂未知原因
 // $('.footer').html("<div class='clear_fl'> <ul class = 'left' ><p><a href='know_cg.html'><span>了解车工</span></a></p> <li > <a href='know_cg.html?0'><span>董事长致辞</span></a>  <li > <a href='know_cg.html?1'><span>企业介绍</span></a>  <li > <a href='know_cg.html?2'><span>企业文化</span></a>  <li > <a href='know_cg.html?3'><span>职工风采</span></a>  <li > <a href='know_cg.html?4'><span>车工荣誉</span></a>  </ul> <ul class = 'left' ><p><a href='news.html'><span>新闻资讯</span></a></p> <li > <a href='news.html?0'><span>行业资讯</span></a>  <li > <a href='news.html?1'><span>公司动态</span></a>  <li > <a href='news.html?2'><span>媒体报道</span></a>  </ul> <ul class = 'left' ><p><a href='service.html'><span>业务领域</span></a></p> <li > <a href='service.html?0'><span>车工汽配</span></a>  <li > <a href='service.html?1'><span>车工快修</span></a>  <li > <a href='service.html?2'><span>车工车府令</span></a>  <li > <a href='service.html?3'><span>车工新能源</span></a>  </ul> <ul class = 'left' ><p><a href='nvestor.html'><span>投资者关系</span></a></p> <li > <a href='nvestor.html?0'><span>定期报告</span></a>  </ul> <ul class = 'left' ><p><a href='add_cg.html'><span>加入车工</span></a></p> <li > <a href='add_cg.html?0'><span>招聘信息</span></a>  <li > <a href='add_cg.html?1'><span>联系我们</span></a>  <li > <a href='add_cg.html?2'><span>在线联系</span></a>  </ul> <ul class = 'left' ><div></div> <p > 服务热线： 4009905840</ul> </div>")
-$('.footer').html("<div class='clear_fl'> <ul class = 'left' ><p><a href='know_cg.html'><span>了解车工</span></a></p> <li > <a href='know_cg.html?0'><span>董事长致辞</span></a>  <li > <a href='know_cg.html?1'><span>企业介绍</span></a>  <li > <a href='know_cg.html?2'><span>企业文化</span></a>  <li > <a href='know_cg.html?3'><span>职工风采</span></a>  <li > <a href='know_cg.html?4'><span>车工荣誉</span></a>  </ul> <ul class = 'left' ><p><a href='news.html'><span>新闻资讯</span></a></p> <li > <a href='news.html?0'><span>行业资讯</span></a>  <li > <a href='news.html?1'><span>公司动态</span></a>  <li class='none'> <a href='news.html?2'><span>媒体报道</span></a>  </ul> <ul class = 'left' ><p><a href='service.html'><span>业务领域</span></a></p> <li > <a href='service.html?0'><span>车工汽配</span></a>  <li > <a href='service.html?1'><span>车工快修</span></a>  <li > <a href='service.html?2'><span>车工车府令</span></a>  <li > <a href='service.html?3'><span>车工新能源</span></a>  </ul> <ul class = 'left' ><p><a href='nvestor.html'><span>投资者关系</span></a></p> <li > <a href='nvestor.html?0'><span>定期报告</span></a>  </ul> <ul class = 'left' ><p><a href='add_cg.html'><span>加入车工</span></a></p> <li > <a href='add_cg.html?0'><span>招聘信息</span></a>  <li > <a href='add_cg.html?1'><span>联系我们</span></a>    </ul> <ul class = 'left' ><div></div> <p > 服务热线： 4009905840</ul> </div>")
+// console.log($('.footer>div').length)
+window.onload = function() {
+	if ($('.footer>div').length == 0) {
+		$('.footer').html("<div class='clear_fl'> <ul class = 'left' ><p><a href='know_cg.html'><span>了解车工</span></a></p> <li > <a href='know_cg.html?0'><span>董事长致辞</span></a>  <li > <a href='know_cg.html?1'><span>企业介绍</span></a>  <li > <a href='know_cg.html?2'><span>企业文化</span></a>  <li > <a href='know_cg.html?3'><span>职工风采</span></a>  <li > <a href='know_cg.html?4'><span>车工荣誉</span></a>  </ul> <ul class = 'left' ><p><a href='news.html'><span>新闻资讯</span></a></p> <li > <a href='news.html?0'><span>行业资讯</span></a>  <li > <a href='news.html?1'><span>公司动态</span></a>  <li class='none'> <a href='news.html?2'><span>媒体报道</span></a>  </ul> <ul class = 'left' ><p><a href='service.html'><span>业务领域</span></a></p> <li > <a href='service.html?0'><span>车工新能源</span></a>  <li > <a href='service.html?1'><span>车工科技</span></a> <li ><a href='service.html?2'><span>车工汽配</span></a>  <li > <a href='service.html?3'><span>车工快修</span></a>    </ul> <ul class = 'left' ><p><a href='nvestor.html'><span>投资者关系</span></a></p> <li > <a href='nvestor.html?0'><span>定期报告</span></a>  </ul> <ul class = 'left' ><p><a href='add_cg.html'><span>加入车工</span></a></p> <li > <a href='add_cg.html?0'><span>招聘信息</span></a>  <li > <a href='add_cg.html?1'><span>联系我们</span></a>    </ul> <ul class = 'left' ><div></div> <p > 服务热线： 010-58027550</ul> </div>")
+
+	}
+}

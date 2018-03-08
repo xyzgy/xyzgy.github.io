@@ -1,8 +1,11 @@
+.siblings_page{
+padding-left: 40px;
+}
 .siblings_page p{
 	font-size: 22px;
 	color: #656565;
-	line-height: 50px;
-	margin-top: 20px;
+	line-height: 48px;
+	/*margin-top: 10px;*/
 }
 
 .hyzx_page p{
@@ -17,7 +20,7 @@
 	cursor: pointer;
 }
 .hyzx_title{
-	font-size: 36px;
+	font-size: 32px;
 	color: #656565;
 	/*text-align: center;*/
 }
@@ -44,4 +47,5 @@
 	max-height: 800px;
 	overflow-y: scroll;
 	margin-bottom: 40px;
+	margin-left: 40px;
 }
