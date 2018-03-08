@@ -102,7 +102,9 @@
 
 }
 
-
+.other_bg{
+	line-height: 0;
+}
 .other_bg img{
 	width: 100%;
 	min-width: 1200px;
