@@ -22,7 +22,7 @@ $('.cgry_li').click(function() {
 		$container.masonry({
 			itemSelector: '.box',
 			gutter: 20,
-			isAnimated: true,
+			isAnimated: false,
 		});
 	});
 })

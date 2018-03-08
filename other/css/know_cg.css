@@ -9,9 +9,14 @@
 	text-indent:40px;
 }
 .cgry div.box{
-
+	width: 270px;
 	margin-bottom:20px;
-	margin-right: 39px;
+	margin-right: 16px;
+	/*border:1px solid red;*/
+}
+.cgry div.box img{
+	width: 100%;
+	height: auto;
 }
 
 .zgfc_img{

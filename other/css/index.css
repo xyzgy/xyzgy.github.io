@@ -93,7 +93,7 @@
 }
 .news_ul li{
     float: left;
-    width: 410px;
+    width: 360px;
     border-top: 1px solid #b4b4b4
 }
 .news_ul li:not(:last-child){
@@ -138,20 +138,20 @@
 }
 .work_ul li{
     float: left;
-    width:690px;
+    width:590px;
     margin:8px 0;
 }
 .work_ul li:nth-child(odd){
     margin-right: 20px;
 }
 .work_ul li img{
-    width:690px;
+    width:590px;
 }
 .work_title{
     position: absolute;
     font-size: 48px;
     margin-top: -148px;
-    width: 690px;
+    width: 590px;
     height: 148px;
     line-height: 148px;
     text-align: center;

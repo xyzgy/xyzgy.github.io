@@ -90,7 +90,13 @@ $('.header_ul>li ul.header_li_ul li').click(function() {
 $('.page_ul li').click(function() {
 	let index = $(this).index();
 	let text = $(this).text();
-	listPage(this, index, text)
+	listPage(this, index, text);
+
+	console.log($('.main_top').height())
+
+	$('body,html').animate({
+		scrollTop: $('.main_top').height()
+	}, 500);
 })
 
 $('.page_li').click(function() {
