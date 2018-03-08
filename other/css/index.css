@@ -2,11 +2,12 @@
 .banner,.other_bg {
      /*width: 1920px;*/
      width: 100%;
-     min-width: 1666px;
+     min-width: 1200px;
 }
 .banner-ul img,.other_bg img{
      width: 100%;
-     min-width: 1666px;
+     min-width: 1200px;
+     height: auto;
 
 
 }
@@ -23,14 +24,14 @@
     top: 54%; 
 }
 .prev {
-	left: 14%;
+	left: 0;
     background-image: url(../image/index/banner/1.png);
     background-position: 0 0;
 }
 
 .next {
 	background-image: url(../image/index/banner/2.png);
-    right: 14%;
+    right: 0;
 }
 
 

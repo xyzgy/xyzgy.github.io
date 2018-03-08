@@ -21,7 +21,7 @@ if (index_url == 'index') {
 
 }
 // 初始化banner图高度
-$('.main_top').height(main_top_height - 4);
+// $('.main_top').height(main_top_height - 4);
 
 if (get_url == undefined) {
 	// 头部跳转 默认首位
@@ -35,16 +35,16 @@ if (get_url == undefined) {
 	listPage(_this, getIndex, text)
 }
 // 页面大小改变时更改banner图高度
-$(window).resize(function() {
-	if (index_url == 'index') {
-		main_top_height = $('.banner li').height();
-	} else {
+// $(window).resize(function() {
+// 	if (index_url == 'index') {
+// 		main_top_height = $('.banner li').height();
+// 	} else {
 
-		main_top_height = $('.other_bg').height();
-	}
-	$('.main_top').height(main_top_height - 4);
+// 		main_top_height = $('.other_bg').height();
+// 	}
+// 	$('.main_top').height(main_top_height - 4);
 
-});
+// });
 $(function() {
 	$(window).scroll(function() {
 		// console.log($(window).scrollTop())

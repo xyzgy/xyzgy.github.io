@@ -1,3 +1,7 @@
+.main_top,.main_context{
+	/*display: none;*/
+	/*border:1px solid red;*/
+}
 .global{
 	display: none;
 }
@@ -26,8 +30,8 @@
 .header{
 	z-index: 99;
 	width:100%;
-    min-width: 1666px;
-    margin-top: 4%;
+    min-width: 1200px;
+    margin-top: 80px;
 	/*border:1px solid red;*/
 }
 .header_right{
@@ -48,7 +52,7 @@
 }
 .header div.header_div{
 	position: relative;
-	width:1666px;
+	width:1200px;
 	margin:0 auto;
 	border-bottom:2px solid #8c8d8f;
 	height: 80px;
@@ -61,7 +65,7 @@
 }
 .header_ul>li:not(:first-child){
 	float: left;
-	width:150px;
+	width:120px;
 	text-align: center;
 	height: 30px;
 	line-height: 30px;
@@ -69,8 +73,8 @@
 	font-size: 20px;
 	padding:4px;
 	margin-top: 16px;
-/*	border:1px solid red;
-	height: 300px;*/
+	/*border:1px solid red;*/
+	/*height: 300px;*/
 
 }
 .header_ul>li p{
@@ -93,7 +97,7 @@
 }
 .header_li_ul{
 	background: rgba(149,156,164,0.5);
-	width: 150px;
+	width: 120px;
 	display: none;
 
 }
@@ -101,7 +105,8 @@
 
 .other_bg img{
 	width: 100%;
-	max-width: 1903px;
+	min-width: 1200px;
+	height: auto;
 }
 
 .header_li_ul li{
@@ -177,6 +182,9 @@
 	font-size: 36px;
 	background: #ccc;
 	color: #686868;
+}
+.dt_span{
+	display: none;
 }
 .page_ul{
 	background: #eee;
