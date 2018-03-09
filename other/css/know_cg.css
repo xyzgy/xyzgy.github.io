@@ -1,5 +1,9 @@
+.siblings_page{
+	/*padding-left: 30px;*/
+	margin-bottom: 100px;
+}
 .siblings_page p:not(:first-child) {
-	margin-top: 20px;
+	/*margin-top: 10px;*/
 
 }
 .siblings_page p {
@@ -40,4 +44,20 @@
 	line-height: 48px;
 	text-indent:40px;
 	margin: 20px 0;
+}
+.qywh{
+	padding-left: 100px;
+
+}
+.qywh div>span{
+	font-size: 20px;
+	color: #656565;
+	line-height: 46px;
+	text-indent:40px;
+	margin: 20px 0;
+}
+.qywh div>span.cs{
+	display: inline-block;
+	line-height: 0;
+	margin-left: 100px;
 }

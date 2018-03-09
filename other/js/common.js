@@ -95,7 +95,7 @@ $('.page_ul li').click(function() {
 	// console.log($('.main_top').height())
 
 	$('body,html').animate({
-		scrollTop: $('.main_top').height()
+		scrollTop: $('.main_top').height() / 2
 	}, 500);
 })
 

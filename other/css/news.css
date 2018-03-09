@@ -23,6 +23,8 @@ padding-left: 40px;
 	font-size: 32px;
 	color: #656565;
 	text-align: center;
+	margin: 60px 0 30px 0;
+
 }
 .hyzx_time{
 	font-size: 18px;
@@ -44,9 +46,9 @@ padding-left: 40px;
 }
 
 .hyzx_page,.gsdt_page{
-	max-height: 800px;
-	overflow-y: scroll;
-	margin-bottom: 40px;
+	/*max-height: 800px;*/
+	/*overflow-y: scroll;*/
+	margin-bottom: 100px;
 	margin-left: 40px;
 }
 .page_img{
