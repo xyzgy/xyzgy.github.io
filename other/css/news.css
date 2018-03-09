@@ -22,7 +22,7 @@ padding-left: 40px;
 .hyzx_title{
 	font-size: 32px;
 	color: #656565;
-	/*text-align: center;*/
+	text-align: center;
 }
 .hyzx_time{
 	font-size: 18px;
@@ -48,4 +48,14 @@ padding-left: 40px;
 	overflow-y: scroll;
 	margin-bottom: 40px;
 	margin-left: 40px;
+}
+.page_img{
+	position: relative;
+	width: 800px;
+	margin:0 auto;
+	display: table;
+}
+.page_img div{
+	display: table-cell;
+	text-align: center;
 }

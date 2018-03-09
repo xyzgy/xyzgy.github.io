@@ -234,6 +234,7 @@
 
 .p_title{
 	font-size: 22px;
+	padding:0 0 10px 0;
 }
 .p_txt{
 	font-size: 20px;
@@ -256,7 +257,7 @@
 }
 .page_img_ul li:last-child{
 	width:620px;
-	font-size: 14px;
+	font-size: 22px;
 	color: #686868;
 	/*border:1px solid red;*/
 }
