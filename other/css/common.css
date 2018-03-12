@@ -31,8 +31,23 @@
 	z-index: 99;
 	width:100%;
     min-width: 1200px;
-    margin-top: 80px;
+    /*margin-top: 80px;*/
 	/*border:1px solid red;*/
+}
+@media screen and (max-width: 1920px) {
+   .header{
+   	 margin-top: 80px;	
+	}
+}
+@media screen and (max-width: 1600px) {
+   .header{
+   	 margin-top: 54px;	
+	}
+}
+@media screen and (max-width: 1300px) {
+   .header{
+   	 margin-top: 40px;	
+	}
 }
 .header_right{
 	position: absolute;
